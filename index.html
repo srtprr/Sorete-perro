@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>soreteperro.com</title>
+    <script>
+        // Espera que la página cargue completamente
+        window.onload = function() {
+            // Verifica el tamaño de la ventana para determinar el dispositivo
+            if (window.innerWidth <= 768) {
+                // Redirige a la versión móvil si el ancho de la pantalla es 768px o menos
+                window.location.href = "https://srtprr.github.io/Sorete-perro-Movil/";  // Cambia esta URL por la URL de la versión móvil
+            } else {
+                // Redirige a la versión de escritorio si el ancho de la pantalla es mayor a 768px
+                window.location.href = "https://srtprr.github.io/Sorete-perro-PC/";  // Cambia esta URL por la URL de la versión de escritorio
+            }
+        };
+    </script>
+</head>
+<body>
+    <h1>Redirigiendo...</h1>
+</body>
+</html>
