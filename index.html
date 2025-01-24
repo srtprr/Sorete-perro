@@ -21,22 +21,13 @@
     <script>
         // Espera que la página cargue completamente
         window.onload = function() {
-            // Verifica si la redirección ya ocurrió
-            if (!localStorage.getItem('redirigido')) {
-                // Marca que ya se redirigió para evitar el bucle
-                localStorage.setItem('redirigido', 'true');
-
-                // Verifica el tamaño de la ventana para determinar el dispositivo
-                if (window.innerWidth <= 768) {
-                    // Redirige a la versión móvil si el ancho de la pantalla es 768px o menos
-                    window.location.href = "https://srtprr.github.io/Sorete-perro-Movil/";  // Cambia esta URL por la URL de la versión móvil
-                } else {
-                    // Redirige a la versión de escritorio si el ancho de la pantalla es mayor a 768px
-                    window.location.href = "https://srtprr.github.io/Sorete-perro-PC/";  // Cambia esta URL por la URL de la versión de escritorio
-                }
+            // Verifica el tamaño de la ventana para determinar el dispositivo
+            if (window.innerWidth <= 768) {
+                // Redirige a la versión móvil si el ancho de la pantalla es 768px o menos
+                window.location.href = "https://srtprr.github.io/Sorete-perro-Movil/";  // Cambia esta URL por la URL de la versión móvil
             } else {
-                // Si la página ya fue redirigida, no hacemos nada más
-                console.log("Redirección ya realizada previamente");
+                // Redirige a la versión de escritorio si el ancho de la pantalla es mayor a 768px
+                window.location.href = "https://srtprr.github.io/Sorete-perro-PC/";  // Cambia esta URL por la URL de la versión de escritorio
             }
         };
     </script>
